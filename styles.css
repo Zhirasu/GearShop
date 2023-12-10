@@ -14,6 +14,21 @@ a {
   color: #ffffff !important;
 }
 
+@media screen and (max-width: 992px) {
+  div.content_carrucel {
+    max-width: 992px;
+    grid-auto-columns: calc(50% - 9px) !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  section.section_carrucel ul {
+    width: 100%;
+  }
+  div.content_carrucel {
+    max-width: 600px;
+    grid-auto-columns: 100% !important;
+  }
+}
 p {
   margin-bottom: 0 !important;
 }
@@ -21,7 +36,7 @@ p {
 body {
   color: #ffffff !important;
   font-family: "Montserrat", sans-serif;
-  font-size: 0.9rem !important;
+  font-size: 0.8rem !important;
   overflow-x: hidden;
   background-color: rgb(235, 236, 242) !important;
 }
@@ -98,7 +113,7 @@ body header div.content_nav div.content_bar-options {
   margin-right: 30px;
   align-items: center;
   align-content: center;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin-left: 15px;
 }
 body header div.content_nav div.content_bar-options div.cotent_cat {
@@ -140,7 +155,7 @@ body header div.content_nav div.content_bar-options div.content_shop div.contene
   border-radius: 50px;
   width: 30px;
   text-align: center;
-  line-height: 1;
+  line-height: 1.5;
 }
 body header div.content_nav div.content_bar-options div.content_shop div.contenedor_carrito span:nth-child(2) {
   margin-top: 5px;
@@ -201,12 +216,12 @@ main section.section_banner header.slogan_header {
   z-index: 100;
 }
 main section.section_banner header.slogan_header h2 {
-  font-size: 3.5rem !important;
+  font-size: 3rem !important;
   font-weight: 400;
 }
 main section.section_banner header.slogan_header p {
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   margin-top: 20px;
 }
 main section.section_banner footer.slogan_footer {
@@ -220,7 +235,7 @@ main section.section_banner footer.slogan_footer {
 }
 main section.section_banner footer.slogan_footer a {
   border: 3px solid #ffffff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 500;
   border-radius: 4px;
   display: inline-block;
@@ -240,6 +255,7 @@ main section.section_banner footer.slogan_footer a:nth-child(2):hover {
   color: #ffffff !important;
   border-color: #005d89;
   transition: all 0.6s ease;
+  box-shadow: 0 6px 10px rgba(220, 223, 225, 0.3);
 }
 main section.section_banner div.content_img-banner {
   position: absolute;
@@ -339,23 +355,60 @@ main section.section_carrucel {
   flex-direction: column;
   width: 100vw;
 }
-main section.section_carrucel h2 {
+main section.section_carrucel h3 {
   color: #005d89;
   text-align: start !important;
   padding-bottom: 20px;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
-main section.section_carrucel div.content_carrucel {
+main section.section_carrucel div.content_main-carrucel {
+  position: relative;
+}
+main section.section_carrucel div.content_main-carrucel svg.arrow_svg {
+  height: 55px;
+  width: 55px;
+  background: #01a0e1;
+  color: #ffffff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  font-size: 1.25rem;
+  transform: translateY(-50%);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transition: all 0.6s ease;
+  border: 1px solid #01a0e1;
+  z-index: 500;
+}
+main section.section_carrucel div.content_main-carrucel svg.arrow_svg:hover {
+  background: #ffffff;
+  color: #01a0e1;
+  transition: all 0.6s ease;
+}
+main section.section_carrucel div.content_main-carrucel svg.arrow_svg:first-child {
+  left: -26px;
+}
+main section.section_carrucel div.content_main-carrucel svg.arrow_svg:last-child {
+  right: -12px;
+}
+main section.section_carrucel div.content_main-carrucel ul {
+  position: relative;
+  padding: 5px !important;
+  overflow: hidden;
+}
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel {
   display: grid;
   margin-right: 15px;
-  justify-content: center;
-  align-content: center;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  grid-auto-flow: column;
+  grid-auto-columns: calc(25% - 9px);
+  gap: 16px;
+  cursor: pointer;
   color: #272727;
-  width: 90%;
+  max-width: 1140px;
 }
-main section.section_carrucel div.content_carrucel div.content_car {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car {
   -o-object-fit: cover;
      object-fit: cover;
   display: grid;
@@ -364,22 +417,22 @@ main section.section_carrucel div.content_carrucel div.content_car {
   background-color: #ffffff;
   transition: all 0.6s ease;
 }
-main section.section_carrucel div.content_carrucel div.content_car:hover {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car:hover {
   box-shadow: 0 5px 3px rgba(47, 50, 50, 0.6);
   transition: all 0.6s ease;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.img_prod {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.img_prod {
   border-bottom: 1px solid rgba(47, 50, 50, 0.2);
   padding: 20px 0;
   width: 100%;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.img_prod img {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.img_prod img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf {
   display: flex;
   justify-content: start;
   align-items: start;
@@ -388,44 +441,36 @@ main section.section_carrucel div.content_carrucel div.content_car div.content_i
   text-align: justify;
   width: 100%;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf h3 {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf h3 {
   font-size: 1rem;
   font-weight: 100;
   color: #272727 !important;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf div.content_inf-price {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
-  align-content: center;
-  width: 100%;
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf span.inf_price {
+  font-size: 2rem !important;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf div.content_inf-price span.inf_price {
-  font-size: 2.4rem !important;
-}
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf div.content_inf-price span.inf_price b:nth-child(2) {
-  font-size: 2.6rem;
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf span.inf_price b:nth-child(2) {
+  font-size: 2rem;
   font-weight: normal;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf div.content_inf-price span.inf_estatus {
-  font-size: 1.3rem;
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf span.inf_estatus {
+  font-size: 1rem;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf p.description_envio {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf p.description_envio {
   color: #005d89;
   font-size: 1rem;
   font-weight: bold;
   margin-top: 5px;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf p.description_status {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf p.description_status {
   color: #005d89;
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: flex;
   flex-grow: 1;
   flex-basis: 0;
   justify-content: end;
   align-items: end;
 }
-main section.section_carrucel div.content_carrucel div.content_car div.content_inf p.description_product {
+main section.section_carrucel div.content_main-carrucel ul div.content_carrucel li.content_car div.content_inf p.description_product {
   color: #000000;
 }/*# sourceMappingURL=styles.css.map */
