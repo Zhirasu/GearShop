@@ -531,7 +531,7 @@ footer.footer_section div:nth-child(2) ul.nav_copi p {
 
 @media screen and (max-width: 992px) {
   div.content_nav nav:nth-child(2) {
-    width: 100%;
+    width: 100% !important;
   }
   div.content_bar-options div {
     display: none !important;
