@@ -5,6 +5,16 @@
   box-sizing: border-box !important;
 }
 
+body {
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.8rem !important;
+  overflow-x: hidden;
+  background-color: rgb(235, 236, 242) !important;
+  width: 100vw;
+  height: 100vh;
+}
+
 ul, ol {
   list-style: none;
   margin: 0;

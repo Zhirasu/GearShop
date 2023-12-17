@@ -5,12 +5,22 @@
     padding:0;
     box-sizing:border-box !important;
 }
+body{
+    color: $color_fuente  !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-size: $fuente_normal  !important;
+    overflow-x: hidden;
+    background-color: $color_body  !important;
+    width: 100vw;
+    height: 100vh;
+}
 
 ul,ol{
     list-style:none;
     margin: 0;
     padding:0;
 }
+
 
 img,svg{
     width: 100%;
