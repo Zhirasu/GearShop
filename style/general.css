@@ -5,6 +5,11 @@
   box-sizing: border-box !important;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   color: #ffffff !important;
   font-family: "Montserrat", sans-serif !important;
@@ -12,7 +17,12 @@ body {
   overflow-x: hidden;
   background-color: rgb(235, 236, 242) !important;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
 }
 
 ul, ol {
@@ -25,9 +35,19 @@ img, svg {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  color: #ffffff;
+}
+
+i {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+i.icon_big {
+  font-size: 1.5rem;
 }
 
 a {
   text-decoration: none !important;
-  color: #ffffff !important;
+  color: #ffffff;
 }/*# sourceMappingURL=general.css.map */

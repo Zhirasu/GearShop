@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  color: #ffffff !important;
+  font-family: "Montserrat", sans-serif !important;
+  font-size: 0.8rem !important;
+  overflow-x: hidden;
+  background-color: rgb(235, 236, 242) !important;
+  width: 100vw;
+  height: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding-bottom: 10px;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img, svg {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  color: #ffffff;
+}
+
+i {
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+i.icon_big {
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none !important;
+  color: #ffffff;
+}
+
+ul.nav_sidebar-content {
+  margin-top: 20px;
+}
+
+li.content_filter {
+  display: flex;
+  margin-top: 5px;
+}
+li.content_filter input {
+  width: 30%;
+  height: 20px;
+}
+li.content_filter i.fa-minus {
+  font-size: 1rem;
+  color: #131414;
+  line-height: 1.2;
+}
+
+div.content_all-section-category {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+div.content_all-section-category aside.aside_category {
+  display: flex;
+  max-width: 1140px;
+  color: #131414;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar {
+  padding: 20px 10px 20px 70px;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar ul li span.search_category {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar ul li h2.title_section {
+  font-size: 2.4rem;
+  margin-top: 30px;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar ul li h3.title_category {
+  margin-top: 30px;
+  padding: 0;
+  font-size: 1rem;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar ul li a {
+  color: #005d89;
+  font-size: 0.9rem;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar ul li a span.span_cant-cat {
+  margin-left: 5px;
+  color: #272727;
+}
+div.content_all-section-category aside.aside_category nav.nav_sidebar ul li a span.more_view-btn {
+  font-weight: 600;
+  color: #005d89;
+  font-size: 0.8rem;
+  text-decoration: underline;
+}
+div.content_all-section-category main.main_category {
+  display: flex;
+  max-width: 1140px;
+  color: #131414;
+  grid-column-start: 2;
+  grid-column-end: 5;
+}
+div.content_all-section-category main.main_category div {
+  width: 100%;
+}
+div.content_all-section-category main.main_category div ul.all_content-category {
+  width: 80%;
+  margin-top: 70px;
+}
+div.content_all-section-category main.main_category div ul.all_content-category li.item_content-category {
+  background-color: #ffffff;
+  margin-top: 3px;
+  padding: 15px 25px 15px 10px;
+}
+div.content_all-section-category main.main_category div ul.all_content-category li.item_content-category a.content_card-category {
+  display: flex;
+  color: #131414;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+div.content_all-section-category main.main_category div ul.all_content-category li.item_content-category a.content_card-category div.img_category {
+  width: 200px;
+  height: 150px;
+  padding: 15px;
+}
+div.content_all-section-category main.main_category div ul.all_content-category li.item_content-category a.content_card-category div.img_category img {
+  height: 100%;
+}
+div.content_all-section-category main.main_category div ul.all_content-category li.item_content-category a.content_card-category div.info_category h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+div.content_all-section-category main.main_category div ul.all_content-category li.item_content-category a.content_card-category div.info_category span {
+  font-size: 1.7rem;
+  font-weight: 500;
+}/*# sourceMappingURL=category.css.map */
